@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单之input元素讲解</title>
+</head>
+<body>
+<form action="http://www.vgxit.com/course/search" method="get" target="_blank" autocomplete="on">
+    <fieldset>
+        <legend>搜索课件文本框</legend>
+        <input  name="keyword" type="datetime-local"/>
+        <!-- type="text"
+             size:设置宽度
+             maxlength:设置文本框最大字符长度
+             value:设置文本框的初始值
+             required:表明用户必须填写一个值,否则无法通过输入验证
+             placeholder:表示输入字符的提示
+             readonly:文本框是只读状态(只能读不能写)
+             disabled:文本框处于禁用状态
+             list:指定文本框提供建议值为datalist元素,其值为对应datalist元素的id
+
+             type="password"
+             一般用于密码框的输入,所有字符都会显示为星号,或者是小圆点.
+             当type="password"时,我们可以使用text的各种属性,包括但不限于:
+             maxlength,placeholder,readonly,disabled,size,value,required
+
+             type="search"
+             和文本框一致,会多显示一个红×,用来取消内容,其他属性和text一样
+
+             type="number"\"range"
+             都是只输入数字的文本,不同浏览器显示的方式不同,不一样的是:
+             type="range",生成一个数值范围文本框,样式为拖动式(Slider).额外的属性可以
+             使用如下:
+             list,min(可以接受的最小值),max(可以接受的最大值)readonly,required,step(指定上下调节的步长)
+             value(初始值)
+
+             type="number"
+
+             type="date"
+             浏览器支持不完整,可以获取日期和时间的值.
+             -->
+        <button type="submit">搜索</button>
+    </fieldset>
+</form>
+
+</body>
+</html>

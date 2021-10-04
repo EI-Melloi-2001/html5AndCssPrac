@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单的基本使用</title>
+</head>
+<body>
+<!-- action就是表示表单要提交的一个地址 -->
+<!--form元素有如下几个属性:
+    1 action:表示表单被提交的地址
+    2 method:表示表单的请求方式(post/get)默认为get(不区分大小写)
+    3 enctype:表示浏览器发送给服务器的数据采用的编码格式(application/x-www-form-urlencoded(默认编码,不能将文件上传至服务器))
+              multipart/form-data(用于上传文件),text/plain(未规范的代码,不建议使用.)
+    4 name:表示表单的名字,方便程序调用(JavaScript)
+    5 target:设置提交的目标位置:_blank(新开一个标签页用于搜索),_parent,_self(默认),_top
+    6 autocomplete:设置我们的浏览器是否要记住我们的用户数据,实现自动完成表单(默认为on),如果不想要自动完成,我们可以设置该属性为off
+    7 novalidate:设置是否执行客户端检查数据的有效性(使用不多)-->
+<form action="http://www.vgxit.com/course/search" method="get" target="_blank" autocomplete="off">
+    <!-- input就是表示一个单行的数据文本框,用户可以在其中输入数据之后,一起提交.
+          一共有7个属性:
+          1 autofocus:光标聚焦到input元素上,用户可以直接输入
+          2 disabled:禁用一个input元素,加了disabled之后,这个元素就不可用了
+          3 autocomplete:设置input元素是否有自动完成的功能(默认是开启的,如果要关闭,用如下代码)
+          4 type:定义元素类型
+          5 name:定义input元素的名,以便服务器接收到响应的值
+          6 value:设置默认的值
+          7 placeholder:提示用户当前的input应该输入什么内容,只是一个提示信息,仅此而已.-->
+    <fieldset >
+        <!-- fieldset:将一些表单元素组织到一起,形成一个整体 -->
+        <legend>搜索课程表单</legend>
+        <!-- 给fieldset分组标签加一个标题 -->
+    <label for="keyword">课程名称:</label><input id="keyword" name="keyword" placeholder="请输入您要查询的课程" autofocus />
+        <br/>
+        <label for="price">课程价格:</label><input id="price" name="price" placeholder="请输入课程的价格" value="" />
+    <button>搜索</button>
+        <!-- button标签表示一个按钮,其对应的type可以有如下属性:
+             1 submit:提交表单(默认)
+             2 reset:重置表单
+             3 button:没有任何作用,就是一个普通按钮,一般要配合JavaScript一起使用-->
+    </fieldset>
+</form>
+
+
+
+</body>
+</html>
