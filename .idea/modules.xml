@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Form/Form.iml" filepath="$PROJECT_DIR$/Form/Form.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaScriptPrac/JavaScriptPrac.iml" filepath="$PROJECT_DIR$/JavaScriptPrac/JavaScriptPrac.iml" />
       <module fileurl="file://$PROJECT_DIR$/Prac001/Prac001.iml" filepath="$PROJECT_DIR$/Prac001/Prac001.iml" />
       <module fileurl="file://$PROJECT_DIR$/html5AndCssPrac.iml" filepath="$PROJECT_DIR$/html5AndCssPrac.iml" />
     </modules>
