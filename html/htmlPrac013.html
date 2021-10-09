@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉列表框测试</title>
+</head>
+<body>
+<form action="http://www.vgxit.com/course/search" method="get" target="_blank">
+    请选择您要搜索的课程:
+    <!-- select元素还有如下属性:
+         name:设定提交时候的名字
+         disabled:表示下拉列表是否禁用
+         size:设置下拉列表的高度
+         multiple:设置是否可以多选(长按Crtl+鼠标进行多选)
+         autofocus:自动获取焦点
+         required:选择验证,设置必须选择之后才能通过验证.
+         -->
+    <select name="keyword" multiple>
+        <optgroup label="Java课程" autofocus></optgroup>
+        <option value="Java类加载器">Java类加载器</option>
+        <option value="Java多线程">Java多线程</option>
+        <option value="Java零基础玩转集合">Java零基础玩转集合</option>
+        <optgroup label="PHP课程" autofocus></optgroup>
+        <option value="PHP基础入门">PHP基础入门</option>
+        <option value="PHP数据库操作">PHP数据库操作</option>
+        <option value="PHP的Swoole讲解">PHP的swoole讲解</option>
+    </select>
+    <button type="submit">搜索</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单之input元素讲解</title>
+</head>
+<body>
+<form action="http://www.vgxit.com/course/search" method="get" target="_blank">
+    <fieldset>
+        <legend>搜索课件文本框</legend>
+        <label>音乐:</label><input type="checkbox" value="1" name="supports[0]" checked/><br/>
+        <label>体育:</label><input type="checkbox" value="2" name="supports[1]" required/><br/>
+        男:<input type="radio" name="gender" value="0"/>
+        女:<input type="radio" name="gender" value="1"/>
+        <!-- type为color 变成一个颜色选择框
+             type为checkbox 表示复选框
+             type为radio 表示单选框
+             checked 表示被选中
+             required 表示必须选中
+             image 表示一个图形类型的按钮-->
+        <!--
+        <input type="submit" value="搜索"> -->
+        <button type="submit">提交</button>
+       <!-- <input type="image" src="../images/xxx.jpg"/>-->
+    </fieldset>
+</form>
+
+</body>
+</html>
